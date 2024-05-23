@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden; /* 避免滚动条出现 */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 600px;
+    overflow-y: auto;
+    max-height: 95vh; /* 确保容器高度不会超过视口高度 */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.result {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.customization {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.view-libraries {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.library-content {
+    text-align: center;
+    font-size: 18px;
+}
+
+.rules {
+    text-align: center;
+    font-size: 14px; /* 设置较小的字体大小 */
+    margin-top: 20px;
+}

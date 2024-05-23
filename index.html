@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punishment Decision Maker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Punishment Decision Maker</h1>
+        <div class="controls">
+            <button onclick="decide('part')">抽取部位</button>
+            <button onclick="decide('tool')">抽取工具</button>
+            <button onclick="decide('pose')">抽取姿势</button>
+            <button onclick="decide('number')">抽取数量</button>
+            <button onclick="decide('penalty')">抽取附加项</button>
+        </div>
+        <div class="result">
+            <p id="partResult">部位: </p>
+            <p id="toolResult">工具: </p>
+            <p id="poseResult">姿势: </p>
+            <p id="numberResult">数量: </p>
+            <p id="penaltyResult">附加项: </p>
+        </div>
+        <div class="customization">
+            <h2>自定义</h2>
+            <div class="input-group">
+                <input type="text" id="newItem" placeholder="请输入内容">
+                <select id="librarySelect">
+                    <option value="parts">部位</option>
+                    <option value="tools">工具</option>
+                    <option value="poses">姿势</option>
+                    <option value="penalties">附加项</option>
+                </select>
+                <button onclick="addItem()">添加</button>
+                <button onclick="removeItem()">删除</button>
+            </div>
+        </div>
+        <div class="view-libraries">
+            <h2>当前库</h2>
+            <button onclick="viewLibrary('parts')">部位一览</button>
+            <button onclick="viewLibrary('tools')">工具一览</button>
+            <button onclick="viewLibrary('poses')">姿势一览</button>
+            <button onclick="viewLibrary('penalties')">附加项一览</button>
+        </div>
+        <div class="library-content">
+            <p id="libraryContent"></p>
+        </div>
+        <div class="rules">
+            <h2>补充说明</h2>
+            <p>1. 受罚时下身全裸或着丁字裤，上衣需拉起至无法覆盖臀部之范围，受罚部位不得有衣物遮盖</p>
+            <p>2. 受罚期间允许小声哭叫/认错/求饶，但不得存在躲避/遮挡/乱动/手摸受罚部位等不配合行为</p>
+            <p>3. 不配合行为每犯1次增加5下；累计超过3次，则重新开始；如企图逃脱惩罚，则惩罚加倍</p>
+	    <p>4. 受罚态度需良好，主动摆好姿势，抽打大腿内侧/臀缝时应主动分腿</p>
+            <p>5. 受罚时若大声哭叫或姿势不标准，经提醒未改正的，上位者可给予加重力度或加罚5-20下不等</p>
+            <p>6. 惩罚每20下为一节，每节间上位者应视情况进行揉臀或给予贝自行揉臀的机会</p>
+            <p>7. 当抽取工具/姿势不便完成惩罚时，上位者可选择合适的姿势/工具执行</p>
+            <p>8.针对手心/脚心/大腿内侧的惩罚为两边各x下</p>
+            <p>9. 附加项中的重新抽取为抽取并替换原变量; 抽取额外为抽取后与原变量一并执行</p>
+            <p>10. x为抽得的惩罚数量</p>
+            <p>11. 游戏规则最终解释权归编写者所有</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
